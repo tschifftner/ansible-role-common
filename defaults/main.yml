@@ -20,5 +20,4 @@ common_packages:
     - htop
     - iptraf
     - ntop
-    - nicstat
     - iftop
