@@ -8,8 +8,6 @@ common_packages:
     - logrotate
     - nano
     - python-pip
-    - ntp
-    - ntpdate
     - wget
     - tar
     - pbzip2
