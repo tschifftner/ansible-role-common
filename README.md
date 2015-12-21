@@ -1,5 +1,7 @@
 # Ansible Role: Common
 
+[![Build Status](https://travis-ci.org/tschifftner/ansible-role-common.svg)](https://travis-ci.org/tschifftner/ansible-role-common)
+
 Installs common packages on Debian/Ubuntu linux servers.
 
 ## Requirements
