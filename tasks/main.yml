@@ -1,0 +1,5 @@
+---
+- name: Install misc packages
+  apt: name={{item}} state=present
+  sudo: yes
+  with_items: {{ common_packages }}

@@ -1,0 +1,27 @@
+---
+common_packages:
+    - curl
+    - git
+    - zip
+    - unzip
+    - vim
+    - logrotate
+    - nano
+    - python-pip
+    - ntp
+    - ntpdate
+    - wget
+    - tar
+    - pbzip2
+    - bzip2
+    - mc
+    - nano
+    - bash-completion
+    - mosh
+    - hdparm
+    - htop
+    - iptraf
+    - iperf3
+    - ntop
+    - nicstat
+    - iftop
