@@ -19,7 +19,6 @@ common_packages:
     - hdparm
     - htop
     - iptraf
-    - iperf3
     - ntop
     - nicstat
     - iftop
