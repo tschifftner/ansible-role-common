@@ -3,3 +3,16 @@
   apt: name={{item}} state=present
   sudo: yes
   with_items: common_packages
+
+- name: Increase entropy
+  apt:
+    name: 'haveged'
+    state: present
+
+- name: Ensure /var/www/ exists
+  file:
+    path: /var/www/
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'

@@ -34,3 +34,10 @@ script:
 
   # ansible-lint checks for best practice
   - ansible-lint tests/$SITE
+
+after_failure:
+  - ansible --version
+  - ansible -i 127.0.0.1, -m setup all -c local
+
+notifications:
+  slack: ambimax:2MlPTX9bY9aPxCPhJGxHKIT6
