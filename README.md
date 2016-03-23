@@ -43,7 +43,14 @@ None.
 
     - hosts: server
       roles:
-        - { role: tschifftner.ansible-role-common }
+        - { role: tschifftner.common }
+
+## Supported OS
+
+Ansible          | Debian Jessie    | Ubuntu 14.04    | Ubuntu 12.04
+:--------------: | :--------------: | :-------------: | :-------------: 
+1.9              | Yes              | Yes             | Yes
+2.0              | Yes              | Yes             | Yes
 
 ## License
 
