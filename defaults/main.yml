@@ -21,3 +21,4 @@ common_packages:
     - iptraf
     - ntop
     - iftop
+    - iotop
