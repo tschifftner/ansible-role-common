@@ -24,3 +24,5 @@ common_packages:
     - iotop
     - ncftp
     - screen
+
+common_locale: 'en_US.UTF-8'

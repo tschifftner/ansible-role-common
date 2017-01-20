@@ -17,3 +17,14 @@
     owner: root
     group: root
     mode: '0755'
+
+- name: set locale to utf-8
+  shell: update-locale LC_ALL={{ common_locale }}
+  changed_when: false
+
+- name: set default locale
+#  become: yes
+  lineinfile:
+    dest: /etc/default/locale
+    regexp: '^LC_ALL'
+    line: 'LC_ALL={{ common_locale }}'
