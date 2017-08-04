@@ -21,6 +21,7 @@
 - name: set locale to utf-8
   shell: update-locale LC_ALL={{ common_locale }}
   changed_when: false
+  tags: ['skip_ansible_lint']
 
 - name: set default locale
 #  become: yes
