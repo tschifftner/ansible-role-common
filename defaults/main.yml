@@ -19,7 +19,7 @@ common_packages:
     - hdparm
     - htop
     - iptraf
-    - ntop
+#    - ntop
     - iftop
     - iotop
     - ncftp
