@@ -24,5 +24,6 @@ common_packages:
     - iotop
     - ncftp
     - screen
+    - dnsutils
 
 common_locale: 'en_US.UTF-8'
