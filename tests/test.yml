@@ -3,4 +3,4 @@
   become: true
 
   roles:
-    - ansible-role-common
+    - role_under_test
