@@ -24,5 +24,6 @@ common_packages:
     - ncftp
     - screen
     - dnsutils
+    - locales
 
 common_locale: 'en_US.UTF-8'
