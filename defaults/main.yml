@@ -13,7 +13,6 @@ common_packages:
     - pbzip2
     - bzip2
     - mc
-    - nano
     - bash-completion
     - mosh
     - hdparm
