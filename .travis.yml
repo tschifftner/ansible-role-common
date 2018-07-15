@@ -34,7 +34,7 @@ script:
   - ${DOCKER} curl --version
   - ${DOCKER} git --version
   - ${DOCKER} zip --version
-  - ${DOCKER} unzip --version
+  - ${DOCKER} unzip --version | grep 'UnZip'
   - ${DOCKER} vim --version
   - ${DOCKER} logrotate --version
   - ${DOCKER} nano --version
@@ -43,16 +43,16 @@ script:
   - ${DOCKER} tar --version
   - ${DOCKER} pbzip2 --version
   - ${DOCKER} bzip2 --version
-  - ${DOCKER} mc --version
-  - ${DOCKER} mosh --version
-  - ${DOCKER} hdparm --version
+  - ${DOCKER} mc --version | grep 'Midnight Commander'
+  - ${DOCKER} mosh --version | grep 'mosh'
+  - ${DOCKER} hdparm -V
   - ${DOCKER} htop --version
-  - ${DOCKER} iptraf --version
-  - ${DOCKER} iftop --version
+  - ${DOCKER} iptraf -f | grep 'IPTraf'
+  - ${DOCKER} iftop --version | grep 'iftop'
   - ${DOCKER} iotop --version
-  - ${DOCKER} ncftp --version
+  - ${DOCKER} ncftp -h | grep 'NcFTP'
   - ${DOCKER} screen --version
-  - ${DOCKER} dnsutils --version
+  - ${DOCKER} dig -v # dnsutils
 
 after_failure:
   - ${DOCKER} ls -la /var/www
