@@ -47,7 +47,6 @@ script:
   - ${DOCKER} mosh --version | grep 'mosh'
   - ${DOCKER} hdparm -V
   - ${DOCKER} htop --version
-  - ${DOCKER} iptraf -h | grep 'IPTraf'
   - ${DOCKER} iftop --version | grep 'iftop'
   - ${DOCKER} iotop --version
   - ${DOCKER} ncftp -h | grep 'NcFTP'
@@ -55,8 +54,8 @@ script:
   - ${DOCKER} dig -v # dnsutils
 
   # Ensure locales are installed
-  - ${DOCKER} locale -a | grep 'en_US.UTF-8'
-  - ${DOCKER} locale -a | grep 'de_DE.UTF-8'
+  - ${DOCKER} locale -a | grep 'en_US.utf8'
+  - ${DOCKER} locale -a | grep 'de_DE.utf8'
 
   # Ensure correct locale is set
   - ${DOCKER} cat /etc/default/locale | grep 'LANG=de_DE.UTF-8'
