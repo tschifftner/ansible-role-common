@@ -1,29 +1,29 @@
 ---
 common_packages:
-    - curl
-    - git
-    - zip
-    - unzip
-    - vim
-    - logrotate
-    - nano
-    - python-pip
-    - wget
-    - tar
-    - pbzip2
-    - bzip2
-    - mc
-    - nano
-    - bash-completion
-    - mosh
-    - hdparm
-    - htop
-    - iptraf
-#    - ntop
-    - iftop
-    - iotop
-    - ncftp
-    - screen
-    - dnsutils
+  - haveged
+  - curl
+  - git
+  - zip
+  - unzip
+  - vim
+  - logrotate
+  - nano
+  - python-pip
+  - wget
+  - tar
+  - pbzip2
+  - bzip2
+  - mc
+  - bash-completion
+  - mosh
+  - hdparm
+  - htop
+  - iptraf
+#  - ntop
+  - iftop
+  - iotop
+  - ncftp
+  - screen
+  - dnsutils
 
 common_locale: 'en_US.UTF-8'

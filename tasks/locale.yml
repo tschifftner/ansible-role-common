@@ -1,0 +1,16 @@
+
+- name: Install language packages
+  apt:
+    pkg: '{{ item }}'
+  with_items: '{{ common_local_apt_packages }}'
+
+- name: Generate locales
+  command: 'locale-gen {{ item }}'
+  changed_when: false
+  with_items: '{{ common_locale_generate_languages }}'
+
+- name: set locale to utf-8
+  shell: 'update-locale LC_ALL={{ common_locale }} LANG={{ common_locale }} LANGUAGE="{{ common_locale }}"'
+  changed_when: false
+  ignore_errors: true
+  tags: ['skip_ansible_lint']

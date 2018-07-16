@@ -1,31 +1,18 @@
 ---
-- name: Install misc packages
-  apt:
-    name: '{{item}}'
-    state: present
-  with_items: '{{ common_packages }}'
 
-- name: Increase entropy
-  apt:
-    name: 'haveged'
-    state: present
+- name: Include debian variables
+  include_vars: debian.yml
+  when: ansible_distribution == 'Debian'
 
-- name: Ensure /var/www/ exists
-  file:
-    path: /var/www/
-    state: directory
-    owner: root
-    group: root
-    mode: '0755'
+- name: Include ubuntu variables
+  include_vars: ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'
 
-- name: set locale to utf-8
-  shell: update-locale LC_ALL={{ common_locale }}
-  changed_when: false
-  tags: ['skip_ansible_lint']
+- name: Include packages tasks
+  include: packages.yml
 
-- name: set default locale
-#  become: yes
-  lineinfile:
-    dest: /etc/default/locale
-    regexp: '^LC_ALL'
-    line: 'LC_ALL={{ common_locale }}'
+- name: Include locale tasks
+  include: locale.yml
+
+- name: Include directory tasks
+  include: directory.yml

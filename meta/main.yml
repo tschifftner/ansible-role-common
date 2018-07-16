@@ -10,11 +10,12 @@ galaxy_info:
   platforms:
   - name: Debian
     versions:
-    - jessie
+    - 8 (Jessie)
+    - 9 (Stretch)
   - name: Ubuntu
     versions:
-    - precise
-    - trusty
+    - 16.04 (Xenial Xerus)
+    - 18.04 (Bionic Beaver)
   galaxy_tags:
     - ubuntu
     - debian

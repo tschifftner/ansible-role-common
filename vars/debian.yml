@@ -1,0 +1,6 @@
+
+common_local_apt_packages:
+  - locales
+  - locales-all
+
+common_locale_generate_languages: []

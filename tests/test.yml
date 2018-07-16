@@ -2,5 +2,8 @@
 - hosts: localhost
   become: true
 
+  vars:
+    common_locale: 'de_DE.UTF-8'
+
   roles:
-    - ansible-role-common
+    - role_under_test
