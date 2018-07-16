@@ -1,0 +1,9 @@
+---
+
+- name: Ensure /var/www/ exists
+  file:
+    path: /var/www/
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'

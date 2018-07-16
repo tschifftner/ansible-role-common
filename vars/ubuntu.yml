@@ -1,0 +1,9 @@
+
+common_local_apt_packages:
+  - locales
+  - language-pack-en
+  - language-pack-de
+
+common_locale_generate_languages:
+  - en_US.UTF-8
+  - de_DE.UTF-8

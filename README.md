@@ -12,28 +12,49 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    common_packages:
-        - curl
-        - git
-        - zip
-        - unzip
-        - vim
-        - logrotate
-        - nano
-        - python-pip
-        - wget
-        - tar
-        - pbzip2
-        - bzip2
-        - mc
-        - nano
-        - bash-completion
-        - mosh
-        - hdparm
-        - htop
-        - iptraf
-        - ntop
-        - iftop
+```
+common_packages:
+  - haveged
+  - curl
+  - git
+  - zip
+  - unzip
+  - vim
+  - logrotate
+  - nano
+  - python-pip
+  - wget
+  - tar
+  - pbzip2
+  - bzip2
+  - mc
+  - bash-completion
+  - mosh
+  - hdparm
+  - htop
+  - iptraf
+  - iftop
+  - iotop
+  - ncftp
+  - screen
+  - dnsutils
+```
+
+Define locale with:
+
+```
+common_locale: 'de_DE.UTF-8'
+
+common_local_apt_packages:
+  - locales
+  - language-pack-en
+  - language-pack-de
+
+common_locale_generate_languages:
+  - en_US.UTF-8
+  - de_DE.UTF-8
+```
+
 
 ## Dependencies
 

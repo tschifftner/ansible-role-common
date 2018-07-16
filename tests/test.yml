@@ -2,5 +2,8 @@
 - hosts: localhost
   become: true
 
+  vars:
+    common_locale: 'de_DE.UTF-8'
+
   roles:
     - role_under_test
